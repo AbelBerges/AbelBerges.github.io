@@ -1,0 +1,15 @@
+.contiene {
+    display: flex;
+}
+
+.vaForm {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+ form {
+    text-align: left;
+    width: 400px;
+ }

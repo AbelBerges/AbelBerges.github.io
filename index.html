@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución al ejercicio 10 con un formulario</title>
+    <link rel="stylesheet" href="hoja.css">
+</head>
+<body>
+    <div class="contiene">
+        <div class="vaForm">
+            <h2>Validados de Fechas</h2>
+            <form name="fechas" onsubmit="event.preventDefault(),valido(this.vaFecha.value)">
+                <label for="">Ingrese la fechas</label>
+                <input type="date" name="vaFecha" id="vaFecha">
+                <br>
+                <input type="submit" value="Validar">
+            </form>
+        </div>
+        <br>
+    </div>
+    <div class="contiene">
+        <div class="vaForm">
+            <p id="salida"></p>
+        </div> 
+    </div>
+    <script src="acciones.js"></script>
+</body>
+</html>
