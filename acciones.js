@@ -1,21 +1,26 @@
 /*
-10) Realice una página que permita cargar una fecha en el formato DD-MM-YYYY y diga
-cuántos días faltan o ya pasaron respecto del día de hoy.
+5) El programa “elige” un número al azar entre uno y un millón y pregunta por el mismo. El
+visitante intenta acertar en una ventana emergente. Tras cada respuesta, una nueva
+ventana dice “el número es Mayor” o “el número es Menor” y se pide un nuevo número,
+hasta que el usuario lo acierta. En ese momento una ventana lo felicita y muestra el número
+de intentos que ha realizado hasta el acierto.
 */
 
-function valido(vieneFecha){
-    let laFecha = new Date(vieneFecha);
-    let esHoy = new Date();
-    let referencia = 86400000;
-    let dif = esHoy.getTime() - laFecha.getTime();
-    let difFinal = parseInt(dif/referencia);
-    let elHtml = '';
-    if(difFinal > 0){
-        elHtml += "Entre la fehca ingresada y la fecha de hoy han pasado " + difFinal + " días";
-    } else if(difFinal < 0){
-        elHtml += "Faltan para que llegue la fecha ingresada " + (-1 * difFinal) + " días";
+var num = parseInt(Math.random(1 - 20) * 20);
+var armado = document.getElementById("salida");
+
+console.log(num);
+
+
+function evaluar(elValor){
+    armado = ' ';
+    //document.getElementById("salida").innerHTML = armado;
+    if(elValor > num){
+        armado += 'El número ingresado ' + elValor + ' es mayor que el número secreto <br>';
+    } else if (elValor < num) {
+        armado += 'El número ingresado ' + elValor + ' es menor que el número secreto <br>';
     } else {
-        elHtml += "Las fechas ingresadas son las mismas";
+        armado += '¡Felicitaciones! - ' + elValor + ' es el número secreto';
     }
-    return document.getElementById("salida").innerHTML = elHtml;
+    return document.getElementById("salida").innerHTML = armado;
 }
