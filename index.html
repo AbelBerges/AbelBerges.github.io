@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solución al ejercicio 10 con un formulario</title>
-    <link rel="stylesheet" href="hoja.css">
+    <title>Ejercicio 5 de el TP con solución con funciones</title>
+    <link rel="stylesheet" href="hojaCSS.css">
 </head>
 <body>
-    <div class="contiene">
-        <div class="vaForm">
-            <h2>Validados de Fechas</h2>
-            <form name="fechas" onsubmit="event.preventDefault(),valido(this.vaFecha.value)">
-                <label for="">Ingrese la fechas</label>
-                <input type="date" name="vaFecha" id="vaFecha">
+    <div class="contenedor">
+        <div class="contenido">
+            <h2>Descubrir el número secreto</h2>
+            <form action="" name="descubrir" onsubmit="event.preventDefault(),evaluar(this.elNum.value)">
+                <label for="">Ingrese un número</label>
+                <input type="number" name="elNum">
                 <br>
-                <input type="submit" value="Validar">
+                <input type="submit" value="Probar">
             </form>
-        </div>
-        <br>
-    </div>
-    <div class="contiene">
-        <div class="vaForm">
             <p id="salida"></p>
-        </div> 
+        </div>
+        <script src="programa.js"></script>
     </div>
-    <script src="acciones.js"></script>
 </body>
 </html>
