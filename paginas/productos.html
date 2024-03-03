@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de productos</title>
+    <link rel="stylesheet" href="../estilos/styleProd.css">
+    <script src="../js/productos.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="elForm">
+            <div class="titulo">Pagina de productos</div>
+            <form action="" name="productos">
+                <label class="prod" for="tvSamsung55" id="nomPro1">Smart TV 55" Samsung</label>
+                <label class="precio" >Precio final: $</label>
+                <span id="precio1">700000</span>
+                <input type="checkbox" name="tvSamsung55" id="tvSamsung55" value="Samsung55SM">
+                <br><br>
+                <label class="prod" for="celSony5RG" id="nomPro2">Celular Sony 5RG-FULL</label>
+                <label class="precio" >Precio final: $</label>
+                <label id="precio2">600000</label>
+                <input type="checkbox" name="celSony5RG" id="celSony5RG" value="SonyFull">
+                <br><br>
+                <label class="prod" for="dell16GW" id="nomPro3">Notebook Dell Inspirion 16GWRR78</label>
+                <label class="precio" >Precio final: $</label>
+                <label id="precio3">1345682</label>
+                <input type="checkbox" name="dell16GW" id="dell16GW" value="DellIspirion">
+                <br><br>
+                <button id="compra">Comprar</button>
+            </form>
+        </div>
+        <div class="datos">
+            <span>El valor total de la compra</span><br>
+            <span>Total: </span> <span id="sumaTotal"></span>
+
+        </div>
+    </div>
+    
+</body>
+</html>

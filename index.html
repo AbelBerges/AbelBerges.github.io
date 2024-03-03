@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 5 de el TP con solución con funciones</title>
-    <link rel="stylesheet" href="hojaCSS.css">
+    <title>Portal de su Empresa</title>
+    <link rel="stylesheet" href="estilos/styleh.css">
 </head>
-<body>
+
+<body onload="cargarFunciones()">
     <div class="contenedor">
-        <div class="contenido">
-            <h2>Descubrir el número secreto</h2>
-            <form action="" name="descubrir" onsubmit="event.preventDefault(),evaluar(this.elNum.value)">
-                <label for="">Ingrese un número</label>
-                <input type="number" name="elNum">
-                <br>
-                <input type="submit" value="Probar">
-            </form>
-            <p id="salida"></p>
+        <div class="armado">
+            <div class="menu">
+                <span class="logo"><img src="img/logo.png" alt="" class="logo"></span>
+                <span class="contieneLista">
+                    <ul>
+                        <li id="productos"></li>
+                        <li class="itemsMenu" id="eletro">Electro</li>
+                        <li class="itemsMenu" id="acceso">Acceso</li>
+                    </ul>
+                </span>
+                <span class="posBoton"><button class="boton" id="registro">Registro</button></span>
+            </div>
+            <div class="info">
+                <div class="paraCarru" id="paraCarru">
+                    <span class="navegacion"><button class="botNav" id="atras"><img src="img/feclaA.png" alt=""></button></span>
+                    <span class="carrusel" id="carrusel"><img src="img/tv01.png" alt=""></span>
+                    <span class="navegacion"><button class="botNavD" id="adelante"><img src="img/feclaR.png" alt=""></button></span>
+                </div>
+            </div>
+            <div class="pie"></div>
+            <!--Acá empieza el armado de la ventana modal-->
+            <div class="mostrar-modal" id="mostrar-modal">
+                <div class="modal" id="modal">
+                    <h1>Formulario de Registro</h1>
+                    <form action="" name="registro">
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre"><br>
+                        <label for="">Apellido</label>
+                        <input type="text" name="apellido"><br>
+                        <label for="">Correo</label>
+                        <input type="text" name="correo"><br>
+                        <label for="">Contraseña</label>
+                        <input type="password" name="clave"><br>
+                        <br>
+                        <span class="ubicarSubmit"><button class="botonSubmit" id="vaRegistro">Registrar</button></span>
+                    </form>
+
+                    <span class="ubicoBoton"><button class="boton" id="cerrar">Cerrar</button></span>
+
+                </div>
+            </div>
         </div>
-        <script src="programa.js"></script>
+
     </div>
+    <script src="js/script.js" defer></script>
 </body>
+
 </html>

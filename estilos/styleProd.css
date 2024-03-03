@@ -1,0 +1,39 @@
+.contenedor {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.elForm {
+    position: relative;
+    left: 0;
+    width: 600px;
+}
+
+.datos {
+    position: relative;
+    left: 0em;
+    width: 300px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.prod {
+    width: 100%;
+    float: left;
+}
+
+.precio {
+    width: 110px;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
