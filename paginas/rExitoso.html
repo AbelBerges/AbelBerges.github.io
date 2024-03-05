@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exito</h1>
+    <script>
+        let datos = JSON.parse(localStorage.getItem('datos'));
+        console.log(datos.nomReg);
+        console.log(datos.apeReg);
+        console.log(datos.correReg);
+        console.log(datos.dniReg);
+        console.log(datos.telReg);
+        console.log(datos.dirReg);
+        console.log(datos.userReg);
+        console.log(datos.passReg);
+
+        // document.getElementById('ingreso').textContent = datos.userReg;
+        /* estoy intentando que el boton de iniciar sesion, diga el nombre de usuario, asi como cuando ingresas
+        con el nombre de usuario preestablecido, que cambia el texto del boton nose si es posible, 
+        si encontras como hacerlo excelente, pero ahi esta tomando el objeto bien
+         creo con el localstorage ya */
+
+
+        window.location.href = "../index.html"
+    </script>
+    
+</body>
+</html>
